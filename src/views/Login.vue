@@ -76,8 +76,7 @@ export default {
              store.commit("setList",JSON.parse(window.localStorage.getItem(this.name)));
              console.log(JSON.parse(window.localStorage.getItem(this.name)));
           }else{
-            store.commit("setList",JSON.parse(window.localStorage.getItem(null)));
-            console.log(JSON.parse(window.localStorage.getItem(this.name)));
+            store.commit("setListNull");
           }
           this.name = "";
           this.password = "";

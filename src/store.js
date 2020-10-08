@@ -19,6 +19,9 @@ export default new Vuex.Store({
     setUser(state,name){
       state.user=name
     },
+    setListNull(state){
+      state.list=[]
+    },
     setList(state,arr){
       state.list=arr
     }
